@@ -1,3 +1,4 @@
+class DetectSoftware {
   getInfo() {
     return {
       id: 'helloworld',
@@ -6,8 +7,15 @@
         {
           opcode: 'hello',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Hello, world!'
+          text: 'Hello!'
         }
       ]
     };
   }
+
+  hello() {
+    return 'World!';
+  }
+}
+
+Scratch.extensions.register(new DetectSoftware());
